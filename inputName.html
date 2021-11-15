@@ -25,7 +25,7 @@ const firebaseConfig = {
 <script src="js/localStorage.js" charset="utf-8"></script>
 
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 
 <script>
 
@@ -34,25 +34,24 @@ const firebaseConfig = {
 
     firebase.initializeApp(firebaseConfig);
 
-    //firebase.database().ref('users/'+ document.getElementById('uname').value).set({
-      //userName:document.getElementById('uname').value,
-      //userEmail:document.getElementById('email').value,
-      //userScore: sessionStorage.test1,
-      //markDeducted : parseInt(1000-sessionStorage.test1)
-    //});
-  //  alert("Go to leaderboard")
-    //return false;
+    firebase.database().ref('users/'+ document.getElementById('uname').value).set({
+      userName:document.getElementById('uname').value,
+      userEmail:document.getElementById('email').value,
+      userScore: sessionStorage.test1,
+      markDeducted : parseInt(1000-sessionStorage.test1)
+    });
+    return false;
 
-    const d = new Date();
-    let time = d.getTime();
-    firebase.database().ref('users/'+ document.getElementById('uname').value+time).set({
-      userName:document.getElementById('uname').value,
-      userEmail:document.getElementById('email').value,
-      userScore: sessionStorage.test1,
-      markDeducted : parseInt(1000-sessionStorage.test1)
-    });
-    sessionStorage.clear();
-    return false;
+    //const d = new Date();
+    //let time = d.getTime();
+    //firebase.database().ref('users/'+ document.getElementById('uname').value+time).set({
+     // userName:document.getElementById('uname').value,
+      //userEmail:document.getElementById('email').value,
+     // userScore: sessionStorage.test1,
+     // markDeducted : parseInt(1000-sessionStorage.test1)
+ //   });
+  //  sessionStorage.clear();
+   // return false;
   }
 </script>
   </head>
