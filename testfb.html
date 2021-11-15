@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width ,initial-scale=1.0">
+    <title>Test Fb</title>
+    <!-- FontAweome CDN Link for Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://www.gstatic.com/firebasejs/9.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.1/firebase-database.js"></script>
+
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyAm7wB1wiGVrVU8Tc24A-kteGb74gPZ3Ko",
+        authDomain: "quizwithtimer.firebaseapp.com",
+        databaseURL: "https://quizwithtimer-default-rtdb.firebaseio.com",
+        projectId: "quizwithtimer",
+        storageBucket: "quizwithtimer.appspot.com",
+        messagingSenderId: "369120741165",
+        appId: "1:369120741165:web:a930749fa742e21c60f5a4",
+        measurementId: "G-GTC6X47B70"
+      };
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.database().ref();
+      //firebase.analytics();
+
+      var userName = prompt('What is your name : ');
+      console.log("userName" +userName);
+      firebase.database().ref('User').set({
+        name: userName,
+        score: 9999
+      });
+      console.log("FirebaseEnd"+db);
+
+    </script>
+</head>
+<body>
+</body>
+</html>
