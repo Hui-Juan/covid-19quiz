@@ -1,10 +1,10 @@
 <div class="leaderboard">
   <head>
     <title>Leaderboard</title>
- <script  src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
-	<script  src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+<script  src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+<script  src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
-
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>   
 <script>
 //// Your web app's Firebase configuration
 //var firebaseConfig = {
@@ -78,7 +78,7 @@ quizDatabase_Sorted.once("value",function(snapshot){
       content +='</tr>';
 
     });
-    document.getElementById('leaderboard').append(content);
+    $('#leaderboard').append(content);
   }
 });
 }
