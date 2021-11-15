@@ -2,18 +2,19 @@
 
 body{
   background-image: linear-gradient(to Left,#E98AEF 5.66%, #85C1E9 94.35%);
+  margin-right: 3px;
 }
 
 * {
-  margin: 0;
+  margin: 3;
   margin-left: auto;
-  padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Andale Mono', monospace;
 }
 .tr{
     background-color: #16181e;
     color: #999;
-    width: 200%;
+    right: 3%;
+    width: auto;
     border-collapse: collapse;
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
@@ -22,6 +23,7 @@ body{
 .leaderboard {
   width:110%;
   border-radius: 1rem;
+  margin-right: 30px;
   box-shadow: 2px 2px 16px 1px #aaa;
 }
 
@@ -35,21 +37,22 @@ html{
 header {
   background-image: linear-gradient(to Left,#F7AFFC 5.66%, #AED6F1 94.35%);
   text-transform: uppercase;
-  height: 14rem;
+  height: 18rem;
   position: relative;
+  width: auto;
   border-radius: 50px 50px 0px 0px;
 }
 
 h1 {
-  font-size: 3rem;
-  line-height: 3rem;
+  font-size: 4rem;
+  line-height: 4rem;
   position: absolute;
   margin-left: 3rem;
   top: 4rem;
 }
 
 img {
-  height: 16rem;
+  height: 18rem;
   position: absolute;
   bottom: 0;
   right: 1rem;
@@ -59,7 +62,7 @@ nav {
   width: 100%;
   position: absolute;
   bottom: 0;
-  font-size: 23px;
+  font-size: 30px;
   background-image: linear-gradient(to Left,#F7AFFC 5.66%, #AED6F1 94.35%);
 }
 
@@ -84,6 +87,7 @@ nav a + a {
 
 table {
   background-image: linear-gradient(to Left,#F7AFFC 5.66%, #AED6F1 94.35%);
+  margin-right: 30px;
   width: 100%;
   height: 70;
   border-collapse: collapse;
@@ -93,7 +97,7 @@ table {
 }
 
 thead {
-  font-size: 0.7rem;
+  font-size: 1rem;
   color: #616A6B;
   text-transform: uppercase;
 }
@@ -101,7 +105,7 @@ thead {
 tbody .nick {
   color: white;
   font-weight: bold;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 tbody tr:nth-child(2n) {
@@ -110,14 +114,14 @@ tbody tr:nth-child(2n) {
 
 .nick {
   text-align: left;
-  font-size: 25px;
+  font-size: 29px;
 }
 
 .rank,
 .sp,
 .kd {
   text-align: right;
-  font-size: 25px;
+  font-size: 35px;
 
 }
 
@@ -156,7 +160,7 @@ table {
     white-space: normal;
     line-height: normal;
     font-weight: normal;
-    font-size: medium;
+    font-size: 30px;
     font-style: normal;
     color: -internal-quirk-inherit;
     text-align: start;
@@ -167,6 +171,7 @@ table {
     background-color: #16181e;
     color: #999;
     width: 100%;
+    margin-right: 30px;
     border-collapse: collapse;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
@@ -175,7 +180,7 @@ table {
 tbody .nick {
     color: white;
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 5rem;
 }
 .hiddenButton{
   padding-left: 30px;
@@ -197,7 +202,8 @@ input[type=text], select {
   cursor: pointer;
   border-radius: 30px 30px 30px 30px;
   padding: 20px;
-  margin-left: 10px;
+  margin-left: 5px;
+  font-size: 30px;
 }
 input[type=email], select {
   width: 99%;
@@ -211,7 +217,8 @@ input[type=email], select {
   cursor: pointer;
   border-radius: 30px 30px 30px 30px;
   padding: 20px;
-  margin-left: 10px;
+  margin-left: 5px;
+  font-size: 30px;
 }
 
 input[type=submit] {
@@ -228,7 +235,7 @@ input[type=submit] {
   width: 200px;
   margin-left: 10px;
   margin-top: 15px;
-  font-size: 24px;
+  font-size: 35px;
   font-weight: bold;
 }
 input[type=submit]:hover{
@@ -248,7 +255,7 @@ label{
   border-radius: 30px;
 }
 #score{
-  font-size: 23px;
+  font-size: 29px;
   padding-left: 10px;
   padding-top: 10px;
   font-weight:bolder;
@@ -256,7 +263,7 @@ label{
 }
 .leaderboard{
   margin-top: 300px;
-  margin-left: 125px;
+  margin-left: 110px;
   width: 80%;
   border-radius: 50px;
 }
