@@ -31,11 +31,9 @@ const firebaseConfig = {
 
 
  function writeData(){
-
-    firebase.initializeApp(firebaseConfig);
-
-    
-    const d = new Date(d.getTime());
+    firebase.initializeApp(firebaseConfig);
+    const d = new Date();
+    let time = d.getTime();
     firebase.database().ref('users/'+ document.getElementById('uname').value+time).set({
       userName:document.getElementById('uname').value,
       userEmail:document.getElementById('email').value,
