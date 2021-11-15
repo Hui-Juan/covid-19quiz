@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width ,initial-scale=1.0">
+    <title>Covid-19 Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAweome CDN Link for Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase-app.js"></script>
+  <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+  <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+
+<script src="js/questions.js"></script>
+<script src="js/localStorage.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyAm7wB1wiGVrVU8Tc24A-kteGb74gPZ3Ko",
+    authDomain: "quizwithtimer.firebaseapp.com",
+    databaseURL: "https://quizwithtimer-default-rtdb.firebaseio.com",
+    projectId: "quizwithtimer",
+    storageBucket: "quizwithtimer.appspot.com",
+    messagingSenderId: "369120741165",
+    appId: "1:369120741165:web:a930749fa742e21c60f5a4",
+    measurementId: "G-GTC6X47B70"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+</script>
+
+    <!-- start Quiz button -->
+    <div class="start_btn"><button>Start COVID-19 Quiz</button></div>
+
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Some Rules of this Quiz</span></div>
+        <div class="info-list">
+            <div class='info'>Welcome! To answer the questions, do refer to the COVID-19 dashboard! Good luck!</div>
+            <div class="info">1. You will have only <span>30 seconds</span> for each question.</div>
+            <div class="info">2.You have only ONE chance to choose your answer.</div>
+            <div class="info">3.You must select your answer before the time is up.</div>
+
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">💉 Covid 19 Dashboard Quiz </div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">30</div>
+            </div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+            <div class="option_list">
+                <!-- Here I've inserted options from JavaScript -->
+            </div>
+        </section>
+
+        <!-- footer of Quiz Box -->
+        <footer>
+          <div class ="correct_question">
+            <!-- insert how many qn correct-->
+          </div>
+            <div class="total_que">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+
+            <button class="next_btn">Next Question</button>
+        </footer>
+    </div>
+  </div>
+</section>
+
+<!-- footer of Quiz Box -->
+<footer>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text" onload="storeToLocal()">You've completed the Quiz!</div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+    <!-- The Modal -->
+
+
+
+    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
