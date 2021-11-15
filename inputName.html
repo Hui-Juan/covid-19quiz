@@ -34,14 +34,16 @@ const firebaseConfig = {
 
     firebase.initializeApp(firebaseConfig);
 
-    firebase.database().ref('users/'+ document.getElementById('uname').value).set({
-      userName:document.getElementById('uname').value,
-      userEmail:document.getElementById('email').value,
-      userScore: sessionStorage.test1,
-      markDeducted : parseInt(1000-sessionStorage.test1)
-    });
-    alert("Proceed to Leaderboard tab to view your rank")
-    return false;
+    const d = new Date();
+    let time = d.getTime();
+    firebase.database().ref('users/'+ document.getElementById('uname').value+time).set({
+      userName:document.getElementById('uname').value,
+      userEmail:document.getElementById('email').value,
+      userScore: sessionStorage.test1,
+      markDeducted : parseInt(1000-sessionStorage.test1)
+    });
+    sessionStorage.clear();
+    return false;
   }
 </script>
   </head>
