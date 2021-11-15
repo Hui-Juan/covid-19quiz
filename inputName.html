@@ -1,0 +1,79 @@
+<div class="leaderboard">
+  <head>
+    <title>Submission Page</title>
+<script  src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+<script  src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+
+<script>
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyAm7wB1wiGVrVU8Tc24A-kteGb74gPZ3Ko",
+  authDomain: "quizwithtimer.firebaseapp.com",
+  databaseURL: "https://quizwithtimer-default-rtdb.firebaseio.com",
+  projectId: "quizwithtimer",
+  storageBucket: "quizwithtimer.appspot.com",
+  messagingSenderId: "369120741165",
+  appId: "1:369120741165:web:a930749fa742e21c60f5a4",
+  measurementId: "G-GTC6X47B70"
+};
+// Initialize Firebase
+
+
+
+</script>
+<script src="js/localStorage.js" charset="utf-8"></script>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+<script>
+
+
+  function writeData(){
+
+    firebase.initializeApp(firebaseConfig);
+
+    firebase.database().ref('users/'+ document.getElementById('uname').value).set({
+      userName:document.getElementById('uname').value,
+      userEmail:document.getElementById('email').value,
+      userScore: sessionStorage.test1,
+      markDeducted : parseInt(1000-sessionStorage.test1)
+    });
+    alert("Proceed to Leaderboard tab to view your rank")
+    return false;
+  }
+</script>
+  </head>
+  <header>
+    <h1>Covid-19 DASHBOARD Quiz</h1>
+    <button class="hiddenButton" type="button" name="button" onclick ="deleteData()">Delete</button>
+    <nav>
+      <a href="inputName.html" class ="active">Submission Form</a>
+      <a href="leaderboard.html" >Leaderboard</a>
+    </nav>
+  </header>
+  <table>
+    <thead>
+      <tr>
+      <th class="nick">NOTE : ALL winners will be notified via email</th>
+      </tr>
+    </thead>
+
+  </table>
+<form action="" onsubmit="return writeData()">
+  <label for="">Name</label><br>
+  <input id="uname" type="text" name="" value="" required>
+  <br>
+  <label for="">Email</label><br>
+  <input id="email" type="email" name="" value="" required>
+  <div id="score">
+  </div>
+  <input type="submit" name="submit" value="Submit">
+</form>
+<!--Write Score by getting localStorage -->
+<script>
+  document.getElementById('score').innerHTML="Your Score : " + sessionStorage.test1;
+</script>
+    <link rel="stylesheet" href="leaderboardStyle.css">
+</div>
