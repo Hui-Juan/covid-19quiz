@@ -68,7 +68,7 @@ let questions = [
    },
    {
    numb: 7,
-   question: "At which phase did the Covid-19 Cases in Singapore reached more than 5000?",
+   question: "At which phase did the first breakout of COVID-19 cases happen?",
    answer: "Phase 2",
    options: [
      "Circuit Breaker",
@@ -79,7 +79,7 @@ let questions = [
     },
     {
     numb: 8,
-    question: "What is the current phase in Singapore?",
+    question: "At which phase did Singapore's COVID-19 cases reached more than 5000?",
     answer: "Stabilisation Stage",
     options: [
       "Stabilisation Stage",
