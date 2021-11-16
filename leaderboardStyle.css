@@ -283,8 +283,8 @@ label{
 }
 #text{
   position: absolute;
-  top: 60%;
-  left: 50%;
+  top: 58%;
+  left: 40%;
   font-size: 50px;
   color: white;
   transform: translate(-50%,-50%);
