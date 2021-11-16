@@ -68,7 +68,7 @@ let questions = [
    },
    {
    numb: 7,
-   question: "Which phase in Singapore has the most Covid-19 Cases?",
+   question: "At which phase did the Covid-19 Cases in Singapore reached more than 5000?",
    answer: "Phase 2",
    options: [
      "Circuit Breaker",
