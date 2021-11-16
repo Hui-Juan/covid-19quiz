@@ -89,7 +89,7 @@ let questions = [
     ]
   },
      {
-     numb: 8,
+     numb: 9,
      question: "At which month of 2021 did the YOY% of visitor arrival increase the most?",
      answer: "April",
      options: [
