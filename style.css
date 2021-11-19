@@ -3,35 +3,23 @@
 /* Media Queries: Tablet Landscape */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+head.p{
+  font-family: monospace;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
 *{
     margin: 0;
     padding: 0;
     width: auto;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Andale Mono', monospace;
 }
 
-p {
-  font-family: monospace;
-  margin-top: 70%;
-  margin-left: 18%;
-  color: white;
-  font-size: 35px;
-}
 
-/* For Mobile */
-@media screen and (max-width: 540px) {
-    .view {
-        width: 400px;
-    }
-}
-
-/* For Tablets */
-@media screen and (min-width: 540px) and (max-width: 780px) {
-    .view {
-        width: 600px;
-    }
-}
 
 body{
     background-image: linear-gradient(to Left,#E98AEF 5.66%, #85C1E9 94.35%);
@@ -49,8 +37,9 @@ body{
 .quiz_box,
 .result_box{
     position: fixed;
-    top: 50%;
+    top: 45%;
     left: 50%;
+    width: auto;
     transform: translate(-50%, -50%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
                 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -63,6 +52,7 @@ body{
     z-index: 5;
     pointer-events: auto;
     transform: translate(-50%, -50%) scale(1);
+
 }
 
 .start_btn button{
@@ -78,7 +68,7 @@ body{
 }
 
 .info_box{
-    width: 390px;
+    width: 375px;
     background: #fff;
     border-radius: 5px;
     transform: translate(-50%, -50%) scale(0.9);
@@ -88,8 +78,8 @@ body{
 }
 
 .info_box .info-title{
-    height: 60px;
-    width: 390px;
+    height: 70px;
+    width: 375px;
     border-bottom: 1px solid lightgrey;
     display: flex;
     align-items: center;
@@ -136,7 +126,7 @@ body{
 }
 
 .quiz_box{
-    width: 410px;
+    width: 375px;
     background: #fff;
     border-radius: 5px;
     transform: translate(-50%, -50%) scale(0.9);
