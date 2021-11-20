@@ -92,7 +92,7 @@ nav a:first-child {
 }
 
 nav a + a {
-  margin-left: 5rem;
+  margin-left: 15rem;
 }
 
 table {
