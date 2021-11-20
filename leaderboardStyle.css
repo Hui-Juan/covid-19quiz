@@ -84,7 +84,7 @@ nav a {
 }
 
 nav a.active {
-  border-bottom: 6px solid #C39BD3;
+  border-bottom: 4px solid #C39BD3;
 }
 
 nav a:first-child {
