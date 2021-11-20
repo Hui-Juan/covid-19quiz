@@ -78,7 +78,7 @@ nav {
 
 nav a {
   padding-top: 1rem;
-  padding-bottom: 0.3rem;
+  padding-bottom: 0.75rem;
   display: inline-block;
   font-weight: bold;
 }
@@ -92,7 +92,7 @@ nav a:first-child {
 }
 
 nav a + a {
-  margin-left: 10rem;
+  margin-left: 5rem;
   width: 4px;
 }
 
