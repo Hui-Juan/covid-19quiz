@@ -78,10 +78,9 @@ nav {
 
 nav a {
   padding-top: 1rem;
-  padding-bottom: 0.75rem;
+  padding-bottom: 2rem;
   display: inline-block;
   font-weight: bold;
-  margin-bottom: 1rem;
 }
 
 nav a.active {
