@@ -93,7 +93,7 @@ nav a:first-child {
 
 nav a + a {
   margin-left: 1rem;
-  padding: 13px 0px 9.75px 500px;
+  padding: 13px 0px 9.75px 10px;
 }
 
 table {
