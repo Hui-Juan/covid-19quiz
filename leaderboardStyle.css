@@ -84,7 +84,7 @@ nav a {
 }
 
 nav a.active {
-  border-bottom: 4px solid #C39BD3;
+  border-bottom: 3px solid #C39BD3;
 }
 
 nav a:first-child {
@@ -92,7 +92,7 @@ nav a:first-child {
 }
 
 nav a + a {
-  margin-left: 15rem;
+  margin-left: 35rem;
 }
 
 table {
