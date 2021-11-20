@@ -85,12 +85,12 @@ nav a {
 
 nav a.active {
   border-bottom: 4px solid #C39BD3;
-  width: auto;
+  width: 30%;
 }
 
 nav a:first-child {
   margin-left: 3rem;
-  width: auto;
+  width: 30%;
 }
 
 nav a + a {
