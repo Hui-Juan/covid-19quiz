@@ -78,7 +78,7 @@ nav {
 
 nav a {
   padding-top: 1rem;
-  padding-bottom: 2rem;
+  padding-bottom: 0.3rem;
   display: inline-block;
   font-weight: bold;
 }
