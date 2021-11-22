@@ -266,7 +266,7 @@ input[type=submit] {
   width: 200px;
   margin-left: 10px;
   margin-top: 15px;
-  font-size: 24px;
+  font-size: 33px;
   font-weight: bold;
 }
 input[type=submit]:hover{
@@ -275,7 +275,7 @@ input[type=submit]:hover{
   border: 2px solid #D1D1F8;
 }
 label{
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   margin-left: 10px;
   font-weight: bold;
 
@@ -286,7 +286,7 @@ label{
   border-radius: 30px;
 }
 #score{
-  font-size: 23px;
+  font-size: 33px;
   padding-left: 10px;
   padding-top: 10px;
   font-weight:bolder;
