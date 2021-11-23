@@ -90,7 +90,7 @@ quizDatabase_Sorted.once("value",function(snapshot){
       var val = data.val();
       content +='<tr>';
       content += '<td class="nick" style="text-align:left;">' + val.userName + '</td>';
-      content += '<td class="email" style="text-align:Left;">' + val.userEmail + '</td>';
+      content += '<td class="email" style="text-align:Left;">' + emailMask(val.userEmail) + '</td>';
       content += '<td class="kd" style="text-align:right;">' + val.userScore + '</td>';
       content +='</tr>';
 
