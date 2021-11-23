@@ -30,7 +30,7 @@ body{
 }
 .leaderboard {
   width:110%;
-  border-radius: 1rem;
+  border-radius: 20px;
   box-shadow: 2px 2px 16px 1px #aaa;
 }
 
@@ -201,8 +201,8 @@ table {
     color: #999;
     width: 100%;
     border-collapse: collapse;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     overflow: hidden;
 }
 tbody .nick {
