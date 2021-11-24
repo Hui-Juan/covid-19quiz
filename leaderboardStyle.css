@@ -161,7 +161,7 @@ th {
 }
 
 .email{
-  padding-left: 95px;
+  padding-left: 90px;
 }
 
 td {
@@ -173,7 +173,7 @@ td {
 
 td.email{
   text-align: left;
-  padding: 26px 13px 26px 35px;
+  padding: 26px 13px 26px 90px;
 }
 
 .leaderboard {
