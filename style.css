@@ -7,8 +7,9 @@
 head.p{
   font-family: monospace;
   color: white;
-  font-size: 20px;
+  font-size: 25px;
   text-align: center;
+  margin-top: 40%
 }
 
 *{
